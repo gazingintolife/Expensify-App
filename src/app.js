@@ -9,7 +9,7 @@ import configureStore from './store/configureStore';
 import { addExpense} from './actions/expenses';
 
 const store = configureStore();
-
+console.log('testing');
 const jsx = (
     <Provider store={store}>
         <AppRouter />
