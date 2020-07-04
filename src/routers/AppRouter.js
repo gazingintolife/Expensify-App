@@ -4,7 +4,7 @@ import ExpenseDashBoardPage from '../components/ExpenseDashBoardPage';
 import AddExpensePage from '../components/AddExpensePage';
 import EditExpensePage from '../components/EditExpensePage';
 import HelpPage from '../components/HelpPage';
-import PageNotFound from '../components/PageNOtFound';
+import PageNotFound from '../components/PageNotFound';
 import Header from '../components/Header';
 
 
