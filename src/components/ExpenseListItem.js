@@ -1,5 +1,7 @@
 import React from 'react';
 import {NavLink} from 'react-router-dom';
+import moment from 'moment';
+import numeral from 'numeral';
 
 // const ExpenseListItem = ({ id, description, amount, createdAt}) => (
     // <div>
@@ -12,9 +14,13 @@ import {NavLink} from 'react-router-dom';
 
 const ExpenseListItem = (expenses) => (
     <div>
-        <NavLink to = {`/edit/${expenses.id}`} activeClassName='is-active' >Description: {expenses.description}</NavLink>
-        <p>Amount: {expenses.amount}</p>
-        <p>Created At: {expenses.createdAt}</p>
+        <NavLink to = {`/edit/${expenses.id}`} activeClassName='is-active' >{expenses.description}</NavLink>
+        <p>
+        {numeral(expenses.amount/100).format('$0,0.00')}
+        </p>
+        <p>
+        {moment(expenses.createdAt).format('MMMM Do, YYYY')}
+        </p>
     </div>
 );
 
