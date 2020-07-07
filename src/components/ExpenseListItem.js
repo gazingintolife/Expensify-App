@@ -24,6 +24,6 @@ const ExpenseListItem = (expenses) => (
     </div>
 );
 
-// this snippet of code below is same as code above as above we use desturcturing 
+// this snippet of code below is same as code above as above we use desturcturing and below we don't
 
 export default ExpenseListItem;
