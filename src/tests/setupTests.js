@@ -5,5 +5,5 @@ import DotEnv from 'dotenv';
 Enzyme.configure({
     adapter: new Adapter()
 });
-DotEnv.congig({path: '.env.test'});
+DotEnv.config({path: '.env.test'});
 
